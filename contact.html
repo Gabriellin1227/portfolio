@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Gabriel Lin</title>
+
+    <!-- Bibliotecas Externas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="sp-navbar">
+                    <div class="sp-logo">
+                        <p>林Lin</p>
+                    </div>
+                    <div class="sp-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="skills.html">Skills</a></li>
+                                <li><a href="aboutme.html">About</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-contact">
+                <div class="container">
+                    <div class="sctt-tel2">
+                        <div class="sctt-tela">
+                            <div class="sctt-conteudo">
+                                <div class="sctt-titulo">
+                                    <h2>Entre já em <br>contato!</h2>
+                                    <img src="assets/profilepic.png" alt="Foto de Perfil">
+                                </div>
+                                <div class="sp-icons">
+                            <div class="icons-socialmedia">
+                                <a href="https://github.com/Gabriellin1227" target="_blank"><i class="bi bi-github" alt="Logo Github"></i></a>
+                            </div>
+                            <div class="icons-socialmedia">
+                                <a href="https://instagram.com/gabriellin1227/" target="_blank"><i class="bi bi-instagram" alt="Logo Instagram"></i></a></i>
+                            </div>
+                            <div class="icons-socialmedia">
+                                <a href="https://www.linkedin.com/in/gabriellin1227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin" alt="Logo LinkedIN"></i></a>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="sctt-form">
+                                <p>Grande visão, sem ótimas pessoas
+                                    é irrelevante, vamos trabalhar juntos!</p>
+                                <form id="formulario">
+                                    <input type="text" id="nome" placeholder="Nome" required>
+                                    <input type="email" id="email" placeholder="Email" required>
+                                    <input type="text" id="numero" placeholder="Número" required>
+                                    <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+
+                                    <button id="sctt-button" type="submit">
+                                        Enviar <span>&rarr;</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="titulo">
+                            <h2>Localização</h2>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="section-footer">
+                <div class="container">
+                    <div class="sf-tela">
+                        <div class="sf-copy">
+                            <p>© 2025 Gabriel Lin</p>
+                        </div>
+                        <div class="sp-icons">
+                            <div class="icons-socialmedia">
+                                <a href="https://github.com/Gabriellin1227" target="_blank"><i class="bi bi-github" alt="Logo Github"></i></a>
+                            </div>
+                            <div class="icons-socialmedia">
+                                <a href="https://instagram.com/gabriellin1227/" target="_blank"><i class="bi bi-instagram" alt="Logo Instagram"></i></a></i>
+                            </div>
+                            <div class="icons-socialmedia">
+                                <a href="https://www.linkedin.com/in/gabriellin1227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin" alt="Logo LinkedIN"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-10.9472, -37.0731], 15);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-10.9472, -37.0731]).addTo(map)
+            .bindPopup('Aracaju, Sergipe')
+            .openPopup();
+    </script>
+</body>
+
+</html>

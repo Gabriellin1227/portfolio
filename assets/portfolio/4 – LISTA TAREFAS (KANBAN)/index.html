@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Kanban</h1>
+
+    <div class="areainput">
+        <input type="text" id="taskInput" placeholder="Digite sua tarefa aqui">
+        <button onclick="criarTarefa()">Adicionar</button>
+    </div>
+
+    <div class="kanban">
+        <div id="em-aberto" class="coluna">
+            <h2>Em Aberto</h2>
+            <div class="card-container"></div>
+        </div>
+        <div id="em-negociacao" class="coluna">
+            <h2>Em negociação</h2>
+            <div class="card-container"></div>
+        </div>
+
+        <div id="em-progresso" class="coluna">
+            <h2>Em Progresso</h2>
+            <div class="card-container"></div>
+        </div>
+
+        <div id="feito" class="coluna">
+            <h2>Concluído</h2>
+            <div class="card-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

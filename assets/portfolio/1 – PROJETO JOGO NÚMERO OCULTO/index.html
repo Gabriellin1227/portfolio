@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO NÚMERO OCULTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="container-conteudo">
+                <h1> Jogo Número Oculto</h1>
+                <div id="ocultar-numero">
+                    <p>Jogador 1: Escolha um número para ocultar (entre 1 e 100):</p>
+                    <input type="password" id="numeroOcultoInput" pattern="[0-9]*" min="1" max="100">
+                    <button onclick="definirNumeroOculto()">Confirmar</button>
+                </div>
+
+                <div id="adivinhar-numero" style="display: none;">
+                    <p>Jogador 2: Tente adivinhar o número oculto. Você tem <span id="tentativasRestantes">5</span>
+                        tentativas.</p>
+                    <input type="number" id="chuteInput" min="1" max="100">
+                    <button onclick="verificarChute()">Chutar</button>
+                    <p id="mensagem"></p>
+                </div>
+
+                <button id="reiniciarBtn" onclick="reiniciarJogo()" style="display: none;">Jogar Novamente</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
