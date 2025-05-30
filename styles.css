@@ -872,3 +872,9 @@ footer {
         gap: 8%;
     }
 }
+
+@media (max-width: 393px) {
+    .sp-navbar {
+        gap: 2%;
+    }
+}
