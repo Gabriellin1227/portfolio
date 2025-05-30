@@ -692,3 +692,183 @@ footer {
     }
 }
 
+@media (max-width: 620px) {
+    /* 🔷 Navbar */
+    .sp-navbar {
+        padding: 0 1rem;
+    }
+
+    .sp-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sp-logo p {
+        font-size: 1.2rem;
+    }
+
+    .sp-nav nav ul {
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .sp-nav nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* 🔷 Seção Principal (Texto + Foto) */
+    .sp-tprincipal {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .sp-textpic {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sp-ftperfil {
+        justify-content: center;
+    }
+
+    .sp-textos h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .sp-textos h4 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .sp-textos p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .sp-infos {
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 420px) {
+    /* 🔷 Navbar */
+    .sp-navbar {
+        align-items: center;
+        gap: 12%;
+    }
+
+    .sp-logo {
+        width: 100%;
+        display: flex;
+    }
+
+    .sp-nav nav ul {
+        align-items: center;
+    }
+
+    .sp-nav nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    /* 🔷 Seção Principal */
+    .sp-tprincipal {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .sp-textpic {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sp-ftperfil {
+        justify-content: center;
+    }
+
+    .sp-textos h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .sp-textos h4 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .sp-textos p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .sp-infos {
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* 🔷 Skills */
+    .ss-areaskills {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .ss-card {
+        width: 100%;
+    }
+
+    /* 🔷 Carrossel */
+    .carrousel .slide {
+        min-width: 90%;
+    }
+
+    .btn.prev {
+        left: -30px;
+    }
+
+    .btn.next {
+        right: -30px;
+    }
+
+    /* 🔷 Footer */
+    .sf-tela {
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    /* 🔷 Mapa */
+    #map {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* 🔷 Contato */
+    .sctt-tela {
+        flex-direction: column;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .sctt-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 563px) {
+    .sp-navbar {
+        gap: 25%;
+    }
+}
+
+@media (max-width: 486px) {
+    .sp-navbar {
+        gap: 8%;
+    }
+}
